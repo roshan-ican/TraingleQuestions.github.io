@@ -93,12 +93,18 @@ function showPreviousSlide() {
     showSlide(currentSlide - 1);
 }
 
+
+
 //Variables
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+
+
 const myQuestions = [
+    
     {
+        
         question: "In a triangle ABC, the length of side AB is 10 inches and length of side BC is 17 inches, Which of the following could be the length of side AC ?",
         answers: {
             a : "16 inches",
@@ -107,6 +113,8 @@ const myQuestions = [
         },
         correctAnswer: "a"
     },
+
+
     {
         question: "How many acute angles must an acute triangle have ?",
         answers : {
@@ -116,14 +124,14 @@ const myQuestions = [
         },
         correctAnswer: "c"
     },
-        {
-        question: "If two sides of a triangle are equal what type of triangle is that ?",
-        answers : {
-            a : "Equilateral",
-            b: "Isosceles",
-            c: "Scalene",
-        },
-        correctAnswer: "b"
+    {
+    question: "If two sides of a triangle are equal what type of triangle is that ?",
+    answers : {
+        a : "Equilateral",
+        b: "Isosceles",
+        c: "Scalene",
+    },
+    correctAnswer: "b"
     },
 ];
 

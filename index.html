@@ -9,6 +9,27 @@
 </head>
 <body>
     <h1>Quiz on Triangle</h1>
+    <script>
+        function display(src, width, height, alt) {
+            var img = document.createElement("img");
+            img.src = src;
+            img.width = width;
+            img.height = height;
+            img.alt = alt;
+            document.body.appendChild(img);
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        button.style.display = "none";
+        }
+    }
+
+
+    </script>
+    <button onclick="display('img/pytho.png', 500, 500, 'FindAC');">1st Question </button>
+    <button onclick="display('img/acute.png', 500, 500, 'Acute');">2nd Question</button>
+    <button onclick="display('img/isosceles-triangle.jpg', 500, 500, 'isoceles');">3rd Question</button>
+
     <div class="quiz-container">
         <div id="quiz"></div>
     </div>
@@ -16,7 +37,6 @@
         <button id="next" type="button">Next Question</button>
         <button id="submit" type="button">Submit Answer</button>
         <div id="results"></div>
-
 </body>
 <script src="index.js"></script>
 </html>
